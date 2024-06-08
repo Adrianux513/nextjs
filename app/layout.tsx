@@ -17,23 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <h1>Clover Corp</h1>
-          <UserButton showName />
-        </header>
         <main>
-          <SignedOut>
-            <SignIn routing="hash" />
-          </SignedOut>
-          <SignedIn>
+          
+            
+          
+          
            {children}
-        </SignedIn>
+        
         </main>
       </body>
     </html>
-    </ClerkProvider>
+    
   );
 }
